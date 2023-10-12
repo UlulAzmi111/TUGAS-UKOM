@@ -1,26 +1,38 @@
 import React from 'react';
 import './works.css';
-import bisnis1 from '../../../assets/bisnis3.png';
-import sekolah1 from '../../../assets/sekolah33.jpg';
-import bisnis3 from '../../../assets/bisnis1.png';
-import sekolah3 from '../../../assets/sekolah1.jpg';
-import bisnis5 from '../../../assets/bisnis2.png';
+import orang from '../../../assets/orang.jpg';
 
 const Works = () => {
   return (
     <section id='works'>
         <h2 className='worksTittle'>
-           Our Portofolio
+            Komentar Pelanggan
         </h2>
-        <span className='worksDesc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem diam, semper sit amet volutpat eget, venenatis sed eros. Etiam massa magna, malesuada a lorem vel, varius bibendum turpis. Maecenas ultricies ut leo vel laoreet. Sed ac maximus nibh. Cras sit amet molestie nisl, a tempor est. Curabitur id tellus erat</span>
-        <div className='worksImgs'>
-            <img className='worksimg' src={bisnis1} alt=''/>
-            <img className='worksimg' src={sekolah1} alt=''/>
-            <img className='worksimg' src={bisnis3} alt=''/>
-            <img className='worksimg' src={sekolah3} alt=''/>
-            <img className='worksimg' src={bisnis5} alt=''/>
+        < div className='worksImgs'>
+          <div className='group1'>
+            <div className='title'>
+              <img className='worksimg' src={orang} alt=''/>
+              <h2 className='usnTitle'>Username Pelanggan</h2>
+            </div>
+          <p className='clientReview'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem diam, semper sit amet volutpat eget, venenatis sed eros. Etiam massa magna, malesuada a lorem vel, varius bibendum turpis. Maecenas ultricies ut leo vel laoreet. Sed ac maximus nibh. Cras sit amet molestie nisl, a tempor est. Curabitur id tellus erat</p>
+          </div>
+
+            <div className="group2">
+              <div className="title">
+          <img className='worksimg' src={orang} alt=''/>
+          <h2 className='usnTitle'>Username Pelanggan</h2>
+          </div>
+          <p className='clientReview'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem diam, semper sit amet volutpat eget, venenatis sed eros. Etiam massa magna, malesuada a lorem vel, varius bibendum turpis. Maecenas ultricies ut leo vel laoreet. Sed ac maximus nibh. Cras sit amet molestie nisl, a tempor est. Curabitur id tellus erat</p>
+          </div>
+          <div className="group3">
+            <div className="title">
+          <img className='worksimg' src={orang} alt=''/>
+          <h2 className='usnTitle'>Username Pelanggan</h2>
+          </div>
+          <p className='clientReview'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem diam, semper sit amet volutpat eget, venenatis sed eros. Etiam massa magna, malesuada a lorem vel, varius bibendum turpis. Maecenas ultricies ut leo vel laoreet. Sed ac maximus nibh. Cras sit amet molestie nisl, a tempor est. Curabitur id tellus erat</p>
+          </div>
         </div>
-        {/* <button className='worksBtn'></button> */}
+        <button className='worksBtn'>See  more</button> 
     </section>
   )
 }
